@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
+#banner-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bolder;
+  font-size: 54px;
+}
+
+#motto {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+}
+
+#banner {
+  background: url(https://i.imgur.com/frHbYvL.png),
+    linear-gradient(to right, rgb(255, 255, 255), 70%, rgba(126, 209, 247, 0.5));
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+.toku-black {
+    color: #121214;
+}
+
+.primary-rider {
+    color: #39FF14;
+}
+
+.sentai-red {
+    color: #FF1E27;
+}
+
+.changer-silver {
+    color: #E0E0E0;
+}
