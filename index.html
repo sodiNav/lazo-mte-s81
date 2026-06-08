@@ -3,23 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HenshinXChange</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
-    <nav class="navbar">
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" id="logo" class="" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact</a>
+                    <!-- <div class="d-flex ">
+                    </div> -->
+                </div>
+                <div class="navbar-nav d-flex ms-auto">
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="button">Search</button>
+                    </form>
+                    <a class="nav-link me-3" href="#">
+                        <i class="bi bi-cart3"></i> Cart
+                    </a>
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-person-fill"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <section id="hero">
-
+    <section id="hero" class="container-fluid">
+        <div class="row mb-5 py-5">
+            <div class="col-md-10 p-5 m-5">
+                <h1 class="mb-3" id="banner-title"> It's Morphing Time </h1>
+                <p class="mb-5" id="motto">
+                    Discover a one-stop shop for your favorite tokusatsu franchises. Prepare to <i>Henshin</i> as you browse our catalog of toku products.
+                </p>
+                <button class="btn btn-primary btn-lg rounded-pill px-3">
+                Shop Now!
+                <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </div>
     </section>
 
-    <div class="card">
-
+    <div id="product-carousel" class="container-fluid">
+        <div class="row py-md-5 px-md-5">
+            <div class="col-sm-12 col-md-6">
+                <div id="carouselExampleInterval" class="carousel slide rounded-5 shadow" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="https://m.media-amazon.com/images/I/51tNEGKplmL._AC_SY350_.jpg" class="d-block w-100 rounded-5" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://ukiyaseed.weebly.com/uploads/5/8/8/7/58878313/editor/gcurn-ja8aa-q-t.jpg?1703667898" class="d-block w-100 rounded-5" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://ukiyaseed.weebly.com/uploads/5/8/8/7/58878313/published/fxgw7yvueaanm-r.jpg?1657251202" class="d-block w-100 rounded-5" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 my-sm-3">
+                <h2>Why HenshinXChange?</h2>
+                <p>Our store offers a variety of products from your favorite tokusatsu shows. Get the latest toy line of Rider Drivers and Sentai Morphers with great deals and affordable prices.</p>
+            </div>
+        </div>
     </div>
 
-    <footer>
+    <div id="products" class="container-fluid">
+        <div class="row py-md-5 px-md-5 justify-content-center">
+            <h2 class="text-center header-font mb-5">Featured Products</h2>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                <div class="card">
+                    <img src="https://tokullectibles.com/cdn/shop/files/1000219714_1.jpg?v=1734602628" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">Mobirate ft Sentai Key</p>
+                        <p class="card-text">$350.00</p>
+                        <button class="btn btn-primary w-100">Buy Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                <div class="card">
+                    <img src="./assets/images/tegasword.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">Tegasword </p>
+                        <p class="card-text">$400.00</p>
+                        <button class="btn btn-primary w-100">Buy Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                <div class="card">
+                    <img src="./assets/images/zeztz.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">Zeztz Driver</p>
+                        <p class="card-text">$300.00</p>
+                        <button class="btn btn-primary w-100">Buy Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row px-5 mx-5">
+            <div class="col-sm-12 col-md-4">
+                <h5>Quick Links</h5>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action border-0">Our Story</a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">Products Catalog</a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">Our Story</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h5>Customer Service</h5>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action border-0">Shipping Policy</a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">Return and Refund</a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">Contact Support</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h5>Contact Us with our Socials</h5>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                        <i class="bi bi-facebook"></i> Facebook
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                        <i class="bi bi-twitter-x"></i> X (Formerly known as Twitter)
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action border-0">
+                        <i class="bi bi-bluesky"></i> Bluesky
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-top my-3"></div>
+
+            <div class="d-flex justify-content-between text-black-50">
+                <p class="text-center m-0">© 2026 HenshinXChange: All Rights Reserved
+                </p>
         
+                <p class="text-center m-0">  
+                    All assets are used for educational purpose only.
+                </p>
+            </div>
+        </div>
+
     </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
