@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <navbar class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">HenshinXChange</a>
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" id="logo" class="" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,15 +44,15 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </navbar>
 
     <div class="container-fluid">
         <section id="hero">
             <div class="row mb-5 py-5" id="banner">
                 <div class="col-md-10 p-5 m-5">
-                    <h1 class="mb-3" id="banner-title"> HenshinXChange </h1>
+                    <h1 class="mb-3" id="banner-title"> It's Morphing Time </h1>
                     <p class="mb-5" id="motto">
-                        Discover a one-stop shop for your favorite niche franchises. Get your morphers and prepare to <i>Henshin</i>
+                        Discover a one-stop shop for your favorite tokusatsu franchises. Prepare to <i>Henshin</i> as you browse our catalog of toku products.
                     </p>
                     <router-link class="btn btn-primary btn-lg rounded-pill px-3">
                     Shop Now!
@@ -67,13 +67,13 @@
                 <div id="carouselExampleInterval" class="carousel slide rounded-5 shadow" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="./assets/images/proj-1.png" class="d-block w-100 rounded-5" alt="...">
+                        <img src="https://m.media-amazon.com/images/I/51tNEGKplmL._AC_SY350_.jpg" class="d-block w-100 rounded-5" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./assets/images/proj-2.png" class="d-block w-100 rounded-5" alt="...">
+                        <img src="https://ukiyaseed.weebly.com/uploads/5/8/8/7/58878313/editor/gcurn-ja8aa-q-t.jpg?1703667898" class="d-block w-100 rounded-5" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./assets/images/proj-3.png" class="d-block w-100 rounded-5" alt="...">
+                        <img src="https://ukiyaseed.weebly.com/uploads/5/8/8/7/58878313/published/fxgw7yvueaanm-r.jpg?1657251202" class="d-block w-100 rounded-5" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -86,8 +86,9 @@
                     </button>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-                
+            <div class="col-sm-12 col-md-6 my-sm-3">
+                <h2>Why HenshinXChange?</h2>
+                <p>Our store offers a variety of products from your favorite tokusatsu shows. Get the latest toy line of Rider Drivers and Sentai Morphers with great deals and affordable prices.</p>
             </div>
         </div>
     
@@ -95,10 +96,30 @@
             <h2 class="text-center header-font mb-5">Featured Products</h2>
             <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
                 <div class="card h-100">
-                    <img src="./assets/images/proj-3.png" class="card-img-top" alt="...">
+                    <img src="https://tokullectibles.com/cdn/shop/files/1000219714_1.jpg?v=1734602628" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-title">Product Title</p>
-                        <p class="card-text">Product Price</p>
+                        <p class="card-title">Mobirate ft Sentai Key</p>
+                        <p class="card-text">$350.00</p>
+                        <button class="btn btn-primary w-100">Buy Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                <div class="card h-100">
+                    <img src="./assets/images/tegasword.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">Tegasword </p>
+                        <p class="card-text">$400.00</p>
+                        <button class="btn btn-primary w-100">Buy Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                <div class="card h-100">
+                    <img src="./assets/images/zeztz.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">Zeztz Driver</p>
+                        <p class="card-text">$300.00</p>
                         <button class="btn btn-primary w-100">Buy Product</button>
                     </div>
                 </div>
@@ -109,7 +130,7 @@
 
     <footer class="container-fluid">
         <div class="row px-5 mx-5">
-            <div class="col-sm-12 col-md-3">
+            <div class="col-sm-12 col-md-4">
                 <h5>Quick Links</h5>
 
                 <div class="list-group">
@@ -118,7 +139,7 @@
                     <a href="#" class="list-group-item list-group-item-action border-0">Our Story</a>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3">
+            <div class="col-sm-12 col-md-4">
                 <h5>Customer Service</h5>
 
                 <div class="list-group">
@@ -127,7 +148,7 @@
                     <a href="#" class="list-group-item list-group-item-action border-0">Contact Support</a>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3">
+            <div class="col-sm-12 col-md-4">
                 <h5>Contact Us with our Socials</h5>
 
                 <div class="list-group">
@@ -144,14 +165,6 @@
                         <i class="bi bi-bluesky"></i> Bluesky
                     </a>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-3">
-                <p class="text-center m-0">©2026 All Rights Reserved.
-                </p>
-
-                <p class="text-center m-0">  
-                    All assets are used for educational purpose only.
-                </p>
             </div>
 
             <div class="border-top my-3"></div>

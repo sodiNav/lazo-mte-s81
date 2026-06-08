@@ -1,36 +1,285 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
 
+:root {
+  --toku-black:    #121214;
+  --section-dark:  #1A1A1E;
+  --border-line:   #2A2A2E;
+  --neon-green:    #39FF14;
+  --sentai-red:    #FF1E27;
+  --changer-silver:#E0E0E0;
+}
+
+body {
+  background-color: var(--toku-black);
+  color: var(--changer-silver);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.header-font   { font-family: 'Orbitron', sans-serif; font-weight: 700; text-transform: uppercase; }
+
+.navbar {
+  background-color: var(--toku-black) !important;
+  border-bottom: 1px solid var(--border-line);
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--changer-silver) !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.85rem;
+  transition: color 0.25s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--neon-green) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--neon-green) !important;
+}
+.navbar-nav .nav-link.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0.85rem;
+  right: 0.85rem;
+  height: 2px;
+  background-color: var(--neon-green);
+  border-radius: 1px;
+}
+
+.navbar .form-control {
+  background-color: var(--section-dark);
+  border: 1px solid var(--border-line);
+  color: var(--changer-silver);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+}
+.navbar .form-control::placeholder { color: #6c6c72; }
+.navbar .form-control:focus {
+  background-color: var(--section-dark);
+  border-color: var(--neon-green);
+  color: var(--changer-silver);
+  box-shadow: 0 0 0 2px rgba(57, 255, 20, 0.15);
+  outline: none;
+}
+
+.navbar .btn-outline-success {
+  border-color: var(--neon-green);
+  color: var(--neon-green);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+.navbar .btn-outline-success:hover {
+  background-color: var(--neon-green);
+  color: var(--toku-black);
+}
+
+.navbar-toggler {
+  border-color: var(--border-line);
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+#banner {
+  background:
+    url(https://yaktribe.games/community/media/desktop-wallpaper-super-sentai-kaizoku-kamen-rider-jpg.120714/full),
+    linear-gradient(to right, var(--toku-black) 40%, rgba(18, 18, 20, 0.6));
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  border-bottom: 1px solid var(--border-line);
+  position: relative;
+}
+
+#banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(18,18,20,0.92) 45%, rgba(18,18,20,0.3));
+  pointer-events: none;
+}
+
+#banner > * { position: relative; z-index: 1; }
+
 #banner-title {
   font-family: 'Orbitron', sans-serif;
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 54px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
 }
 
 #motto {
   font-family: 'Inter', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.25rem;
+  color: var(--changer-silver);
+  font-weight: 400;
+  max-width: 560px;
 }
 
-#banner {
-  background: url(https://i.imgur.com/frHbYvL.png),
-    linear-gradient(to right, rgb(255, 255, 255), 70%, rgba(126, 209, 247, 0.5));
-  background-size: cover;
-  background-position: center;
-  height: 550px;
+#banner .btn-primary {
+  background-color: var(--sentai-red) !important;
+  border-color: var(--sentai-red) !important;
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+#banner .btn-primary:hover {
+  background-color: #cc0e16 !important;
+  border-color: #cc0e16 !important;
+  box-shadow: 0 4px 18px rgba(255, 30, 39, 0.35);
 }
 
-.toku-black {
-    color: #121214;
+#product-carousel {
+  background-color: var(--section-dark);
+  border-top: 1px solid var(--border-line);
+  border-bottom: 1px solid var(--border-line);
 }
 
-.primary-rider {
-    color: #39FF14;
+#products {
+  background-color: var(--toku-black);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.sentai-red {
-    color: #FF1E27;
+#products h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.06em;
 }
 
-.changer-silver {
-    color: #E0E0E0;
+#products .card {
+  background-color: var(--section-dark);
+  border: 1px solid var(--border-line);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+#products .card:hover {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 16px rgba(57, 255, 20, 0.12);
+}
+
+#products .card-body {
+  background-color: var(--section-dark);
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+#products .card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--changer-silver);
+  margin-bottom: 0.25rem;
+}
+
+#products .card-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #9a9a9e;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+#products .btn-primary {
+  background-color: var(--sentai-red) !important;
+  border-color: var(--sentai-red) !important;
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+#products .btn-primary:hover {
+  background-color: #cc0e16 !important;
+  border-color: #cc0e16 !important;
+  box-shadow: 0 3px 12px rgba(255, 30, 39, 0.3);
+}
+
+footer.container-fluid {
+  background-color: var(--section-dark);
+  border-top: 1px solid var(--border-line);
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--changer-silver);
+}
+
+footer h5 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+footer .list-group-item {
+  background-color: transparent;
+  color: var(--changer-silver);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  padding: 0.3rem 0;
+  transition: color 0.2s;
+}
+footer .list-group-item:hover {
+  color: var(--neon-green);
+  background-color: transparent;
+}
+
+footer .border-top {
+  border-color: var(--border-line) !important;
+}
+
+footer .text-black-50 {
+  color: #6c6c72 !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+}
+
+footer p {
+  color: #6c6c72;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+}
+
+.bg-body-tertiary {
+  background-color: var(--toku-black) !important;
+}
+
+/* .container-fluid {
+  background-color: transparent;
+} */
+
+#logo {
+    height: auto;
+    width: 10rem;
 }
